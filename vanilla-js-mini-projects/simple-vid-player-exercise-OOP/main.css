@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.wrapp {
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.video-holder {
+  width: 700px;
+  margin: 50px auto;
+  position: relative;
+}
+video {
+  width: 700px;
+}
+.controls-holder {
+  width: 700px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.controls-holder:hover > img {
+  display: block;
+}
+.controls-holder > img {
+  width: 75px;
+  height: 75px;
+  margin: 0 10px;
+  display: none;
+}
