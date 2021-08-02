@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acc App</title>
+    <!-- 
+        CSS
+     -->
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- 
+        JAVASCRIPT
+     -->
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Main JS -->
+    <script type="module" src="/javascript/main.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="index.html" class="navbar-brand ms-2">Accounts</a>
+      <ul class="navbar-nav ms-auto list-group-horizontal">
+        <li class="nav-item me-3">
+          <a href="accountsView" class="nav-link">Accounts</a>
+        </li>
+        <li class="nav-item me-3">
+          <a href="addAccountsView" class="nav-link">Add Accounts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
+      <!-- Accounts View -->
+      <div class="row view" id="accountsView">
+        <div class="col-10 offset-1">
+          <h2 class="display-4 m-4">Accounts</h2>
+          <div class="row">
+            <div class="col-12">
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>E-mail</th>
+                    <th>Phone</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="accountsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Accounts View END -->
+      <!-- ADD Account View -->
+      <div class="row view" id="addAccountsView">
+        <div class="col-10 offset-1">
+          <h2 class="display-4 m-4">Add Account</h2>
+          <div class="row">
+            <div class="col-12">
+              <label for="accNameAdd" class="form-label">Account name</label>
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="accNameAdd"
+                aria-describedby="Name"
+                placeholder="Enter Account Name"
+              />
+              <label for="accLastnameAdd" class="form-label"
+                >Account Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="accLastnameAdd"
+                aria-describedby="Last Name"
+                placeholder="Enter Account Last Name"
+              />
+              <label for="accEmailAdd" class="form-label">Account E-mail</label>
+              <input
+                type="email"
+                class="form-control mb-2"
+                id="accEmailAdd"
+                aria-describedby="E-mail"
+                placeholder="Enter Account E-mail"
+              />
+              <label for="accPhoneAdd" class="form-label"
+                >Account Phone number</label
+              >
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="accPhoneAdd"
+                aria-describedby="Phone"
+                placeholder="Enter Account Phone number"
+              />
+              <button class="form-control btn btn-info mt-2" id="addAcc">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ADD Account View END -->
+      <!-- EDIT Account View -->
+      <div class="row view" id="editAccountsView">
+        <div class="col-10 offset-1">
+          <h2 class="display-4 m-4">Add Account</h2>
+          <div class="row">
+            <div class="col-12">
+              <label for="accNameEdit" class="form-label">Account name</label>
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="accNameEdit"
+                aria-describedby="Name"
+              />
+              <label for="accLastnameAdd" class="form-label"
+                >Account Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="accLastnameEdit"
+                aria-describedby="Last Name"
+              />
+              <label for="accEmailEdit" class="form-label"
+                >Account E-mail</label
+              >
+              <input
+                type="email"
+                class="form-control mb-2"
+                id="accEmailEdit"
+                aria-describedby="E-mail"
+              />
+              <label for="accPhoneEdit" class="form-label"
+                >Account Phone number</label
+              >
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="accPhoneEdit"
+                aria-describedby="Phone"
+              />
+              <button class="form-control btn btn-warning mt-2" id="editAcc">
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EDIT Account View END -->
+    </div>
+  </body>
+</html>
